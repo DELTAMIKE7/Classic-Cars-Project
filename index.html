@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+	</head>
+	<body>
+		<div id="main">
+			<div id="left">
+				<div id="nav">
+					<img src="./peugeot-logo.png" alt="" />
+					<h3>BACK TO TIMELINE</h3>
+				</div>
+				<div id="center">
+					<!-- Slider main container -->
+					
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div id="first-car" class="cars">
+								<div class="text">
+									<h1>1932</h1>
+									<h3>680S Torpedo Roadster</h3>
+								</div>
+								<img class="img" src="./car2.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div id="second-car" class="cars">
+								<div class="text">
+									<h1>1935</h1>
+									<h3>177B Boxer Evolution</h3>
+								</div>
+								<img class="img" src="./car3.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div id="third-car" class="cars">
+								<div class="text">
+									<h1>1940</h1>
+									<h3>750D Classic Supermini</h3>
+								</div>
+								<img class="img" src="./car1.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+					
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					
+				</div>
+				<div id="gallery"><h3>VIEW GALLERY</h3>
+				<h5><span id="gt"> This page Created by</span>- Dhaneshwar(deltamike_7)</h5></div>
+			</div>
+			<div id="right">
+				<i class="ri-menu-3-line"></i>
+				<i class="ri-search-line"></i>
+				<i class="ri-gallery-line"></i>
+			</div>
+			<div class="cursor"></div>	
+		</div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script>
+			const center = new Swiper('#center', {
+				// Optional parameters
+				// direction: 'horizontal',
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false, 
+				},
+				loop: true,
+
+				// If we need pagination
+				pagination: {
+					el: '.swiper-pagination',
+					clickable :true,
+				},
+
+				// Navigation arrows
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
